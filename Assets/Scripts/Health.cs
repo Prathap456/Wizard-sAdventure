@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-
     public float maxHealth;
     public float minHealth;
     public float health;
@@ -30,6 +29,7 @@ public class Health : MonoBehaviour
         }
         if (health <= minHealth)
         {
+            
             Destroy(gameObject);
         }
     }

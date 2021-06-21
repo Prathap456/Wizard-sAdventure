@@ -120,7 +120,7 @@ public class PlayerController : MonoBehaviour
 
     public void Attack()
     {
-        if (Input.GetKeyDown(KeyCode.F)) {
+        if (Input.GetKeyDown(KeyCode.Space)) {
             
             Instantiate(projectile, firePosition.position, firePosition.rotation);
         }
@@ -140,7 +140,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && Isgrounded())
+        if ((Input.GetKeyDown(KeyCode.W)|| Input.GetKeyDown(KeyCode.UpArrow)) && Isgrounded())
         {
 
             //rb.velocity = Vector2.up * jumpSpeed;
